@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="554.0" prefWidth="582.0" style="-fx-background-color: #262322;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewLoginController">
+   <children>
+      <ImageView fitHeight="583.0" fitWidth="727.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imgLogoBackground.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="424.0" prefWidth="290.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" opacity="0.7" prefHeight="227.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: #A11100; -fx-background-radius: 0 30 0 0;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="De La Vega Steak House" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Frigorífico y distribuidora de carnes" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/imgWhiteLogo.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Calidad de SUPERMERCADO a precios de MERCADO" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="227.0" prefWidth="343.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0 0 0 30; -fx-region-border: 0 0 0 30;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="109.0" text="Iniciar Sesión" textAlignment="CENTER" textFill="#262322">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label text="Usuario" textFill="#262322">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUser" onKeyTyped="#eventKey" promptText="Ingrese su usuario" />
+                        <Label text="Contraseña" textFill="#262322">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="txtPassword" onKeyTyped="#eventKey" promptText="Ingrese su contraseña" />
+                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#eventAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #A11100; -fx-background-radius: 20; -fx-border-radius: 20;" text="Ingresar" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="90.0" right="90.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
